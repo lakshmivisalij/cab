@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="MapTest.DriverLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Images/Screenshot_2017-10-08-23-19-05-47.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="284,36,0,0" TextWrapping="Wrap" Text="Driver Login" VerticalAlignment="Top" RenderTransformOrigin="0.452,0.647" Height="25" Width="146"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="45,88,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" RenderTransformOrigin="0.452,0.647" Height="25" Width="146"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="45,133,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" RenderTransformOrigin="0.452,0.647" Height="25" Width="146"/>
+        <TextBlock x:Name="secretQueTextBlock" HorizontalAlignment="Left" Margin="45,220,0,0" TextWrapping="Wrap" Text="Your Secret Question" VerticalAlignment="Top" RenderTransformOrigin="0.452,0.647" Height="25" Width="146" Visibility="Collapsed"/>
+        <TextBox x:Name="secretQueTextBox" HorizontalAlignment="Left" Margin="33,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="314" Visibility="Collapsed" PlaceholderText="Type Answer to Your Secret Question"/>
+        <Button x:Name="signUpBtn" Content="New Driver! Sign Up" HorizontalAlignment="Left" Margin="481,172,0,0" VerticalAlignment="Top" Click="signUpBtn_Click"/>
+        <Button x:Name="forgotPswdBtn" Content="Forgot Password?" HorizontalAlignment="Left" Margin="34,175,0,0" VerticalAlignment="Top" Click="forgotPswdBtn_Click"/>
+        <Button x:Name="userLoginBtn" Content="Login!" HorizontalAlignment="Left" Margin="277,175,0,0" VerticalAlignment="Top" Click="userLoginBtn_Click"/>
+        <TextBox x:Name="txtBxUserNameLoginPage" HorizontalAlignment="Left" Margin="237,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter User Name"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="7" Margin="237,113,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="0"/>
+        <PasswordBox x:Name="txtBxPasswordLoginPage" HorizontalAlignment="Left" Margin="237,133,0,0" VerticalAlignment="Top" Width="132"/>
+
+    </Grid>
+</Page>

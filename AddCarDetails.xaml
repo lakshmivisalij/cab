@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="MapTest.AddCarDetails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+  
+    
+    mc:Ignorable="d">
+
+    <Grid Margin="14,2,-14,-2">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Images/Screenshot_2017-10-08-23-25-30-65.png"/>
+        </Grid.Background>
+        <TextBox x:Name="carName" HorizontalAlignment="Left" Margin="237,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Car Name" Width="168"/>
+
+        <TextBox x:Name="registrationNumberTxtBx" HorizontalAlignment="Left" Margin="237,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Registration Number" Width="168" InputScope="Number"/>
+        <TextBox x:Name="companyNameTxtBx" HorizontalAlignment="Left" Margin="476,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Company Name" Width="344" InputScope="EmailSmtpAddress"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="76" Margin="237,226,0,0" VerticalAlignment="Top" Width="301" SelectionChanged="listBox_SelectionChanged">
+            <ListBoxItem Content="Mini" />
+            <ListBoxItem Content="Micro - AC" />
+            <ListBoxItem Content="Micro - NON - AC" />
+        </ListBox>
+        <TextBox x:Name="carTypeTxtBx" HorizontalAlignment="Left" Margin="237,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Cab Type" Width="302"/>
+        <Button x:Name="signUpBtn" Content="Add Up!" HorizontalAlignment="Left" Margin="476,348,0,0" VerticalAlignment="Top" Width="100" Click="signUpBtn_Click" Background="#FFE2A954"/>
+        <DatePicker x:Name="dom" HorizontalAlignment="Left" Margin="476,48,0,0" VerticalAlignment="Top" Width="289"/>
+        <Button x:Name="buttonBackPanel" Content="Back To Panel" HorizontalAlignment="Left" Margin="237,348,0,0" VerticalAlignment="Top" Width="117" Click="buttonBackPanel_Click" Background="#FFE2A954"/>
+
+    </Grid>
+
+</Page>

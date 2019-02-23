@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="MapTest.UserSignUpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+  
+    
+    mc:Ignorable="d">
+
+    <Grid Background="#FF55ACB3" Margin="0,0,0,0">
+
+        <TextBox x:Name="firstNameTxtBx" HorizontalAlignment="Left" Margin="164,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="First Name" Width="144
+                 "/>
+        <TextBox x:Name="lastName" HorizontalAlignment="Left" Margin="323,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Last Name" Width="151"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="490,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="User Name" Width="151"/>
+
+        <TextBox x:Name="mobileNumberTxtBx" HorizontalAlignment="Left" Margin="164,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Mobile Number" Width="151" InputScope="Number"/>
+        <TextBox x:Name="emailTxtBx" HorizontalAlignment="Left" Margin="340,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="email ID" Width="344" InputScope="EmailSmtpAddress"/>
+
+        <RadioButton x:Name="maleRadioButton" Content="Male" HorizontalAlignment="Left" Margin="406,77,0,0" VerticalAlignment="Top" Width="101"/>
+        <RadioButton x:Name="femaleRadioButton" Content="Female" HorizontalAlignment="Left" Margin="476,77,0,0" VerticalAlignment="Top" Width="101"/>
+        <TextBlock x:Name="genderTxtBlock" HorizontalAlignment="Left" Margin="340,80,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Height="31" Width="61" FontSize="18"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="76" Margin="165,286,0,0" VerticalAlignment="Top" Width="301" SelectionChanged="listBox_SelectionChanged">
+            <ListBoxItem Content="What is your Birth Place?" />
+            <ListBoxItem Content="What is your Mother's Maiden Name?" />
+            <ListBoxItem Content="What is your First Pet's Name?" />
+            <ListBoxItem Content="What is your First School's Name?" />
+            <ListBoxItem Content="Who is your Favorite Teacher?" />
+        </ListBox>
+        <TextBox x:Name="selectedQueTxtBx" HorizontalAlignment="Left" Margin="165,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Your Selected Question" Width="302"/>
+        <TextBox x:Name="secretAns" HorizontalAlignment="Left" Margin="533,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Your Secret Answer" Width="151"/>
+        <Button x:Name="signUpBtn" Content="Sign Up!" HorizontalAlignment="Left" Margin="476,348,0,0" VerticalAlignment="Top" Width="100" Click="signUpBtn_Click"/>
+        <DatePicker x:Name="dob" HorizontalAlignment="Left" Margin="26,80,0,0" VerticalAlignment="Top" Width="289"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="165,195,0,0" VerticalAlignment="Top" Width="191" PlaceholderText="Enter Your Password"/>
+        <PasswordBox x:Name="verifyPasswordBox" HorizontalAlignment="Left" Margin="426,195,0,0" VerticalAlignment="Top" Width="181" PlaceholderText="Verify Your Password"/>
+        <Button x:Name="Let_s_Loginbtn" Content="Go Back To Login!" HorizontalAlignment="Left" Margin="26,26,0,0" VerticalAlignment="Top" Width="134" Click="Let_s_Loginbtn_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="350" Margin="755,95,0,0" VerticalAlignment="Top" Width="315" Source="Images/Screenshot_2017-10-08-23-19-23-33.png"/>
+
+    </Grid>
+
+</Page>

@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="MapTest.AdminLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="txtBxPasswordLoginPage">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Images/admin.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="237,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.452,0.647" Height="66" Width="316" FontSize="45">
+            <Run Text="Login"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="45,88,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" RenderTransformOrigin="0.452,0.647" Height="25" Width="146"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="45,133,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" RenderTransformOrigin="0.452,0.647" Height="25" Width="146"/>
+        <Button x:Name="userLoginBtn" Content="Login!" HorizontalAlignment="Left" Margin="277,175,0,0" VerticalAlignment="Top" Click="userLoginBtn_Click"/>
+        <TextBox x:Name="txtBxUserNameLoginPage" HorizontalAlignment="Left" Margin="237,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Enter User Name"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="7" Margin="237,113,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="0"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="237,133,0,0" VerticalAlignment="Top" Width="132" PlaceholderText="Enter Password"/>
+
+    </Grid>
+</Page>

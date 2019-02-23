@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="MapTest.DriverActivitiesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF55ACB3">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="-693,665,0,-45" VerticalAlignment="Top" Width="100"/>
+        <ListView x:Name="listViewDriver"  ItemsSource="{Binding}" HorizontalAlignment="Left" Height="386" Margin="246,185,0,0" VerticalAlignment="Top" Width="785"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="495,89,0,0" TextWrapping="Wrap" Text="My Rides!" VerticalAlignment="Top" Width="270" FontSize="45"/>
+        <Button x:Name="buttonAvailable" Content="Make Available!" HorizontalAlignment="Left" Margin="720,94,0,0" VerticalAlignment="Top" Height="55" Width="260" FontSize="30" Click="buttonAvailable_Click"/>
+    </Grid>
+</Page>

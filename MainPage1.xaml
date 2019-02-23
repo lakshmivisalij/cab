@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="MapTest.MainPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Maps:MapControl Name="Display" MapServiceToken="vj8bZHFAgOxMTefIDKpP~vgYRjuN96xaBhC6ETaV6rQ~AnoyIATAP2EiFTznZ6wSaE9pC-KkDhR1QnkudFSVqrlalgAzPAlU2FAsohojLzFx"/>
+
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar IsOpen = 'True' IsSticky="True">
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton Icon="Map" Label="Location" Click="AppBarButton_Click">
+                    
+                                    </AppBarButton>
+                <TextBox Name="tbx1" PlaceholderText="Source"></TextBox>
+                <TextBox Name="tbx2" PlaceholderText="Destination"></TextBox>
+                <Button Name="btn1"  Content="Book Cab" Tapped="btn1_Tapped" />
+                <Button Name="RouteAndDirections" Content="GetRouteAndDirections" Tapped="GetRouteAndDirections"></Button>
+                <TextBlock Name="tbOutputText" Text="Directions"></TextBlock>
+
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+
+</Page>

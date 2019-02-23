@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="MapTest.BookCab"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BorderBrush>
+        <ImageBrush Stretch="Fill"/>
+    </Page.BorderBrush>
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Images/Screenshot_2017-10-08-23-19-37-20.png"/>
+    </Page.Background>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="ms-appx:///Images/Screenshot_2017-10-08-23-19-37-20.png" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.BorderBrush>
+            <ImageBrush Stretch="Fill"/>
+        </Grid.BorderBrush>
+        <Grid.FocusVisualPrimaryBrush>
+            <ImageBrush Stretch="Fill"/>
+        </Grid.FocusVisualPrimaryBrush>
+        <Button x:Name="btn_Mic_Non_Ac" Content="Micro-Non-AC" HorizontalAlignment="Left" Margin="220,129,0,0" VerticalAlignment="Top" Click="button_Click" Height="52" Width="124"/>
+        <Button x:Name="btn_Mini" Content="Mini" HorizontalAlignment="Left" Margin="220,296,0,0" VerticalAlignment="Top" Height="52" Width="76" Click="btn_Mini_Click"/>
+        <Button x:Name="btn_Mic" Content="Micro" HorizontalAlignment="Left" Margin="220,205,0,0" VerticalAlignment="Top" Height="52" Width="78" Click="btn_Mic_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select Your Cab!" VerticalAlignment="Top" Margin="450,19,0,0" FontSize="45"/>
+        <TextBlock x:Name="txtblk_Mic_Non_Ac" HorizontalAlignment="Left" Margin="575,135,0,0" TextWrapping="Wrap" Text="216" VerticalAlignment="Top" Width="119" Height="46"/>
+        <TextBlock x:Name="txtblk_Mini" HorizontalAlignment="Left" Margin="575,313,0,0" TextWrapping="Wrap" Text="323" VerticalAlignment="Top" Width="119" Height="46"/>
+        <TextBlock x:Name="txtblk_Mic" HorizontalAlignment="Left" Margin="575,237,0,0" TextWrapping="Wrap" Text="453" VerticalAlignment="Top" Width="119" Height="46"/>
+        <TextBlock x:Name="txtblk_Mic_Non_Ac_Copy" HorizontalAlignment="Left" Margin="372,140,0,0" TextWrapping="Wrap" Text="Micro Non AC Fare :" VerticalAlignment="Top" Width="139" Height="46"/>
+        <TextBlock x:Name="txtblk_Mic_Copy" HorizontalAlignment="Left" Margin="372,237,0,0" TextWrapping="Wrap" Text="Micro Fare :" VerticalAlignment="Top" Width="119" Height="46"/>
+        <TextBlock x:Name="txtblk_Mini_Copy" HorizontalAlignment="Left" Margin="372,332,0,0" TextWrapping="Wrap" Text="Mini Fare :" VerticalAlignment="Top" Width="119" Height="46"/>
+
+    </Grid>
+</Page>

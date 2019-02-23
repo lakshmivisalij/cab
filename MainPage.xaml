@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="MapTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF55ACB3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="554*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="102,30,0,0" TextWrapping="Wrap" Text="RideCabs' Cab Management System" VerticalAlignment="Top" Height="62" Width="690" Foreground="Yellow" FontWeight="Bold" FontSize="40"/>
+        <Button x:Name="admin" Content="Admin" Grid.Column="1" HorizontalAlignment="Left" Margin="102,121,0,0" VerticalAlignment="Top" Click="admin_Click" Width="127" Height="64"/>
+        <Button x:Name="user" Content="User" Grid.Column="1" HorizontalAlignment="Left" Margin="102,225,0,0" VerticalAlignment="Top" Click="user_Click" Width="127" Height="65"/>
+        <Button x:Name="driver" Content="Driver" Grid.Column="1" HorizontalAlignment="Left" Margin="102,333,0,0" VerticalAlignment="Top" Click="driver_Click" Width="127" Height="62"/>
+        <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Left" Height="284" Margin="399,121,0,0" VerticalAlignment="Top" Width="310" Source="Images/Screenshot_2017-10-08-23-19-23-33.png"/>
+
+    </Grid>
+</Page>
